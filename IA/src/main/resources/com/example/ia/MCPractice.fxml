@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="720.0" prefWidth="1080.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ia.ControllerMCPractice">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane prefHeight="751.0" prefWidth="1040.0">
+      <children>
+         <Button layoutX="628.0" layoutY="288.0" mnemonicParsing="false" onAction="#startPractice" prefHeight="62.0" prefWidth="121.0" text="Click to begin">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Button>
+         <Label fx:id="welcomeText" layoutX="362.0" layoutY="18.0" text="Multiple Chord Practice">
+            <font>
+               <Font size="26.0" />
+            </font>
+         </Label>
+         <Button mnemonicParsing="false" onAction="#backtomenu" prefHeight="42.0" prefWidth="83.0" text="Back">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Button>
+
+         <VBox fx:id="detectionVBox" layoutX="27.0" layoutY="145.0" prefHeight="150.0" prefWidth="242.0" />
+
+         <ListView fx:id="displayFeedback1" layoutX="48.0" layoutY="457.0" prefHeight="142.0" prefWidth="200.0" />
+         <ListView fx:id="displayFeedback2" layoutX="296.0" layoutY="457.0" prefHeight="142.0" prefWidth="200.0" />
+         <ListView fx:id="displayFeedback3" layoutX="544.0" layoutY="457.0" prefHeight="142.0" prefWidth="200.0" />
+         <ListView fx:id="displayFeedback4" layoutX="792.0" layoutY="457.0" prefHeight="142.0" prefWidth="200.0" />
+
+         <Label fx:id="chordPlayed1" layoutX="48.0" layoutY="427.0">
+            <font>
+               <Font size="14.0" />
+            </font></Label>
+         <Label fx:id="chordPlayed2" layoutX="296.0" layoutY="427.0">
+            <font>
+               <Font size="14.0" />
+            </font></Label>
+         <Label fx:id="chordPlayed3" layoutX="544.0" layoutY="427.0">
+            <font>
+               <Font size="14.0" />
+            </font></Label>
+         <Label fx:id="chordPlayed4" layoutX="792.0" layoutY="427.0">
+            <font>
+               <Font size="14.0" />
+            </font></Label>
+
+         <Label fx:id="NoteView" layoutX="362.0" layoutY="363.0" prefHeight="27.0" prefWidth="245.0">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+
+         <Label fx:id="index1" layoutX="215.0" layoutY="180.0" text="-=-">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font></Label>
+         <Label fx:id="index2" layoutX="215.0" layoutY="205.0" text="-=-">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font></Label>
+         <Label fx:id="index3" layoutX="215.0" layoutY="230.0" text="-=-">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font></Label>
+         <Label fx:id="index4" layoutX="215.0" layoutY="255.0" text="-=-">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font></Label>
+
+         <Label fx:id="chord1" layoutX="148.0" layoutY="180.0">
+            <font>
+               <Font size="14.0" />
+            </font></Label>
+         <Label fx:id="chord2" layoutX="148.0" layoutY="205.0">
+            <font>
+               <Font size="14.0" />
+            </font></Label>
+         <Label fx:id="chord3" layoutX="148.0" layoutY="230.0">
+            <font>
+               <Font size="14.0" />
+            </font></Label>
+         <Label fx:id="chord4" layoutX="148.0" layoutY="255.0">
+            <font>
+               <Font size="14.0" />
+            </font></Label>
+         <Button fx:id="practiceOne" layoutX="48.0" layoutY="607.0" mnemonicParsing="false" onAction="#practice" prefHeight="38.0" prefWidth="200.0">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Button>
+         <Button fx:id="practiceTwo" layoutX="296.0" layoutY="607.0" mnemonicParsing="false" onAction="#practice" prefHeight="38.0" prefWidth="200.0">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Button>
+         <Button fx:id="practiceThree" layoutX="544.0" layoutY="607.0" mnemonicParsing="false" onAction="#practice" prefHeight="38.0" prefWidth="200.0">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Button>
+         <Button fx:id="practiceFour" layoutX="792.0" layoutY="607.0" mnemonicParsing="false" onAction="#practice" prefHeight="38.0" prefWidth="200.0">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Button>
+         
+
+      </children>
+
+   </AnchorPane>
+</VBox>
